@@ -20,7 +20,7 @@ body {
 
 .clock {
   position: center;
-  display: flex;
+  display: center;
   flex-flow: column wrap;
   width: 280px;
   height: 100px;
