@@ -6,103 +6,6 @@ body {
   width: 100vw;
 }
 
-.series-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  transform: translateX(-250px);
-  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s cubic-bezier(0.55, 0.54, 0.69, 1.05);
-}
-.series-menu .opaque {
-  position: fixed;
-  width: 0;
-  height: 100%;
-  z-index: -1;
-  transition: background 0.3s ease-in;
-}
-.series-menu * {
-  box-sizing: border-box;
-}
-.series-menu .series-menu-inner {
-  background: #fefefe;
-  height: 100%;
-  overflow: hidden;
-}
-.series-menu .series-menu-content {
-  overflow-y: scroll;
-  width: calc(100% + 14px);
-  height: 100%;
-  padding: 10px 15px;
-}
-.series-menu a {
-  position: relative;
-  width: 100%;
-  text-decoration: none;
-  color: #333;
-}
-.series-menu img {
-  width: 100%;
-}
-.series-menu h1 {
-  margin: 10px 0 0 0;
-  font-weight: 500;
-  font-size: 25px;
-}
-.series-menu h2 {
-  font-size: 18px;
-  margin: 20px 0 8px 0;
-  font-weight: 500;
-}
-.series-menu p {
-  margin: 3px 0;
-  font-size: 14px;
-  font-weight: 400;
-}
-.series-menu button {
-  position: absolute;
-  background: #fefefe;
-  border: none;
-  width: 100px;
-  height: 40px;
-  left: 100%;
-  top: -30px;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  background: #4ddf98;
-  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
-  transform: rotate(90deg);
-  transform-origin: bottom left;
-  color: #222;
-  line-height: 36px;
-  font-weight: 400;
-}
-.series-menu button:focus, .series-menu button:hover {
-  outline: none;
-  background: #26d37f;
-}
-.series-menu.reveal {
-  transform: translateX(0);
-}
-.series-menu.reveal .opaque {
-  width: calc(100vw + 250px);
-  background: rgba(0, 0, 0, 0.2);
-}
-.series-menu.reveal button {
-  background: #ff6666;
-}
-.series-menu.reveal button:focus, .series-menu.reveal button:hover {
-  background: #ff4d4d;
-}
-.series-menu.reveal button > span {
-  transform: rotate(45deg);
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -116,7 +19,7 @@ body {
 }
 
 .clock {
-  position: relative;
+  position: center;
   display: flex;
   flex-flow: column wrap;
   width: 280px;
